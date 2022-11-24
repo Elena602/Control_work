@@ -40,3 +40,7 @@ void FillArray2(int[,] matr)
         }
     }
 }
+FillArray(matrix);
+PrintArray(matrix);
+Console.WriteLine("Новая матрица: ");
+FillArray2(matrix);
