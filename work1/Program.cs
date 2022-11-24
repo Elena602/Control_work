@@ -4,3 +4,25 @@ int n = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine("Введите количество столбцов (m): ");
 int m = int.Parse(Console.ReadLine() ?? "0");
 int[,] matrix = new int [n, m];
+void FillArray(int[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Random random = new Random();
+            matr[i, j] = random.Next(-1500, 1500);
+        }
+    }
+}
+void PrintArray(int[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            Console.Write($"{matr[i,j]} ");
+        }
+        Console.WriteLine();
+    }
+}
