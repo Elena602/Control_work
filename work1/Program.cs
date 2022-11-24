@@ -26,3 +26,17 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
+void FillArray2(int[,] matr)
+{
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+           int variable = matr[i, j] / 10;
+           if (variable > -100 && variable < 100)
+           {
+             Console.Write($"{matr[i, j]}" + " ");
+           }
+        }
+    }
+}
