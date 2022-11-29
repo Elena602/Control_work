@@ -21,3 +21,5 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+SecondArray(countries, array1);
+PrintArray(array1);
